@@ -34,6 +34,7 @@
 	}
 
 	button {
+		color: white;
 		cursor: pointer;
 		display: flex;
 		align-items: center;
@@ -43,7 +44,7 @@
 	}
 
 	button[aria-expanded="true"] svg {
-		stroke: yellow;
+		stroke: white;
 	}
 
 	svg {
