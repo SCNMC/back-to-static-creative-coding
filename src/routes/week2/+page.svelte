@@ -103,7 +103,7 @@ background-blend-mode: screen, color-dodge, overlay, difference, normal; */
 		height: 100%;
 		top: 0;
 		left: 0;
-        filter: saturate(200%);
+        filter: saturate(100%);
 	}
 
 	nav > a {
