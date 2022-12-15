@@ -20,8 +20,8 @@
 			#16222a
 		); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 		height: 78vh;
-		display: flex;
-		justify-content: center;
+    display: flex;
+  justify-content: center;
 		align-items: center;
 	}
 
@@ -32,11 +32,14 @@
     }
 
     li{
-font-size: 1.5em;
+font-size: 1em;
     }
 	@media (min-width: 70rem) {
 		section {
-			margin-top: -18em;
+			margin-top: -10em;
+		}
+		li{
+			font-size: 4em;
 		}
 	}
 </style>

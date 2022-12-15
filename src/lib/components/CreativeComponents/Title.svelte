@@ -11,7 +11,7 @@
         transform: translateY(29%);
     }
     span{
-margin-left: 3em;
+
   
         
     }
@@ -24,7 +24,7 @@ margin-left: 3em;
     }
     h1{
         color: white;
-        font-size: 4em;
+        font-size: 2.5em;
     }
 
     @media(min-width:70rem){
@@ -32,7 +32,7 @@ margin-left: 3em;
             transform: translateY(4%);
         }
         h1{
-            font-size: 10em;
+            font-size: 8em;
         }
     
     }

@@ -30,7 +30,7 @@
 
 <style>
 	:root {
-		--transition-duration: 400ms;
+		--transition-duration: 500ms;
 	}
 
 	button {
@@ -78,6 +78,6 @@
 	}
 
 	.open .middle {
-		transform: rotate(90deg);
+		transform: rotate(-450deg);
 	}
 </style>
