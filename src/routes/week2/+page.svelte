@@ -1,19 +1,19 @@
 <script>
 	import Animatedhamburger from "$lib/components/Animatedhamburger.svelte";
 	import { fly } from "svelte/transition";
-	import { onMount } from "svelte";
-   export let close = false
 	export let open = false;
 	export let onClick = () => {
 		open = !open;
 	};
+
+	
 </script>
 
 <header>
 	<h1>CRAZY ACID MENU</h1>
 	<Animatedhamburger {open} {onClick} />
 	{#if open}
-		<nav transition:fly={{ x: 1000, duration: 500 }}>
+		<nav transition:fly={{ x: 1000, duration: 800 }}>
 			<a transition:fly={{ y: 1000, duration: 1100 }} href=".#">CREATIVE</a>
 			<a transition:fly={{ y: 800, duration: 1100 }} href=".#">CODING</a>
 			<a transition:fly={{ y: 600, duration: 1100 }} href="#">IS REALLY</a>
@@ -23,20 +23,20 @@
 </header>
 
 <style>
-    @font-face {
-    font-family: "stasmic";
-    src: url('/assets/Fonts/stasmic_.ttf');
-}
+	@font-face {
+		font-family: "stasmic";
+		src: url("/assets/Fonts/stasmic_.ttf");
+	}
 
 	h1 {
 		color: white;
 		font-size: 1.5em;
-        font-family: "stasmic";
+		font-family: "stasmic";
 	}
-    a{
-        font-family: "stasmic";
-        font-weight: bolder;
-    }
+	a {
+		font-family: "stasmic";
+		font-weight: bolder;
+	}
 	header {
 		display: flex;
 		justify-content: space-between;
@@ -54,7 +54,7 @@
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
-background-color: #000;
+		background-color: #000;
 		background-image: radial-gradient(
 				at 28% 2%,
 				hsla(199, 85%, 61%, 1) 0,
@@ -103,15 +103,16 @@ background-blend-mode: screen, color-dodge, overlay, difference, normal; */
 		height: 100%;
 		top: 0;
 		left: 0;
-        filter: saturate(100%);
+		filter: saturate(100%);
 	}
 
 	nav > a {
 		font-size: 1.5em;
 		transition: all 0.2s ease-in-out;
 		color: black;
-		text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 2px #fff, 0 0 40px rgb(34, 255, 0),
-			0 0 82px rgb(0, 255, 21), 0 0 92px rgb(43, 255, 0), 0 0 102px rgb(0, 255, 42), 0 0 151px rgb(0, 221, 33), 0 0 151px rgb(34, 255, 0);
+		text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 2px #fff,
+			0 0 40px rgb(34, 255, 0), 0 0 82px rgb(0, 255, 21),
+			0 0 92px rgb(43, 255, 0), 0 0 102px rgb(0, 255, 42), 0 0 141px;
 		animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
 		text-align: center;
 		margin: 0;
@@ -123,7 +124,6 @@ background-blend-mode: screen, color-dodge, overlay, difference, normal; */
 			margin: 0.4em 4em;
 		}
 		nav {
-            
 			position: fixed;
 			display: flex;
 			gap: 5em;

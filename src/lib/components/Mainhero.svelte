@@ -2,14 +2,60 @@
 	export let title;
 	export let text;
 	export let image;
+	import { onMount } from "svelte";
+	import { gsap } from "gsap/dist/gsap";
+	import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+	gsap.registerPlugin(ScrollTrigger);
+
+	onMount(() => {
+		gsap.to(".hero-title", {
+			xPercent: -150,
+			ease: "none",
+			scrollTrigger: {
+				trigger: ".hero-title",
+				pin:".mainhero",
+				start: "top",
+				end: "bottom top",
+				scrub: true,
+			},
+		});
+	});
+
+	onMount(() => {
+		gsap.to(".poop", {
+			xPercent: 150,
+			ease: "none",
+			scrollTrigger: {
+				trigger: ".poop",
+				start: "top",
+				end: "bottom top",
+				scrub: true,
+			},
+		});
+	});
+	onMount(() => {
+		gsap.to(".midterm", {
+			xPercent:- 150,
+			ease: "none",
+			scrollTrigger: {
+				trigger: ".midterm",
+				start: "top",
+				end: "bottom top",
+				scrub: true,
+			},
+		});
+	});
 </script>
 
-<section>
+<section class="mainhero">
 	<!-- <img src="/assets/hero-image.jpeg" alt="woman with laptop" /> -->
-	<h2>Communication<br /> and Multimedia<br /> Design</h2>
-	<img src="/assets/hero-image.jpeg" alt="woman with laptop" />
+	<h2 class="hero-title">Communication<br /> and Multimedia<br /> Design</h2>
+	<img class="poop" src="/assets/hero-image.jpeg" alt="woman with laptop" />
+	<div class="midterm">
 	<p>Midterm</p>
-	<p>Currulicum 2022-2024</p>
+	<p >Currulicum 2022-2024</p>
+</div>
 </section>
 
 <style>
@@ -35,6 +81,7 @@
 		background-color: black;
 		color: white;
 	}
+	.midterm{}
 	h2 {
 		transition: 0.4s cubic-bezier(0.4, 0.4, 0, 1);
 		padding-top: 0.2em;
@@ -53,7 +100,6 @@
 		}
 	}
 
-	
 	@media (min-width: 60em) {
 		section {
 			display: flex;
@@ -72,7 +118,7 @@
 		p {
 			font-size: 1.1em;
 			margin: 0.5em;
-			padding: 1em 3em;
+			padding: 1em 2em;
 			background-color: black;
 			color: white;
 		}
@@ -92,21 +138,21 @@
 		}
 	}
 
-	@media (min-width: 70em){
-		section{
+	@media (min-width: 70em) {
+		section {
 			padding-bottom: 6em;
 		}
-		 section > img{
+		section > img {
 			width: 67%;
 			height: 25.5em;
 		}
 	}
 
-	@media (min-width: 95em){
-		section{
+	@media (min-width: 95em) {
+		section {
 			padding-bottom: 8em;
 		}
-		 section > img{
+		section > img {
 			width: 75.5%;
 			height: 28em;
 		}

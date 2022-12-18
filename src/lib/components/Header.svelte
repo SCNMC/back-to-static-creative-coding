@@ -1,11 +1,11 @@
 <script>
 	import Animatedhamburger from "./Animatedhamburger.svelte";
 	import { fly } from "svelte/transition";
-
 	export let open = false;
 	export let onClick = () => {
 		open = !open;
 	};
+
 </script>
 
 <header>
