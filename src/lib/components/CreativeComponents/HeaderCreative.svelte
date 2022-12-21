@@ -2,7 +2,7 @@
 	<ul>
 		<a href="/week1"><li>Week 1</li></a>
 		<a href="/week2"><li> Week 2</li></a>
-		<li>Week 3</li>
+		<a href="/week3"><li>Week 3</li></a>
 	</ul>
 </section>
 
