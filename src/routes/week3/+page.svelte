@@ -1,3 +1,13 @@
+<script>
+    import { onMount } from "svelte";
+	import { gsap } from "gsap/dist/gsap";
+    onMount(() => {
+	
+
+		
+	});
+</script>
+
 <body>
 	<header>
 		<h1>Creative </h1>
@@ -27,10 +37,6 @@
 		font-family: "Monument Extended";
 		src: url("/assets/Fonts/MonumentExtended-Regular.otf");
 	}
-	@font-face {
-		font-family: "Monument Extended";
-		src: url("/assets/Fonts/MonumentExtended-Bold.otf");
-	}
     @font-face {
 		font-family: "Voyage";
 		src: url("/assets/Fonts/Voyage.ttf");
@@ -47,6 +53,7 @@
 		justify-content: space-between;
 		gap: 1em;
 		padding: 2em 2em;
+        font-family: "Monument Extended";
 	}
 	ul {
 		display: flex;
@@ -59,10 +66,10 @@
     }
 	* {
 		color: #000;
-		font-family: "Monument Extended";
 	}
 	p {
 		font-size: 1em;
+        font-family: "Monument Extended";
 	}
     h2 {
 		position: absolute;
