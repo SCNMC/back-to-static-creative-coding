@@ -78,7 +78,7 @@
 	section {
 		display: flex;
 		align-items: center;
-		justify-content: start;
+		justify-content: center;
         flex-direction: column;
 	}
 
@@ -88,6 +88,13 @@
 		height: 60vh;
 		object-fit: cover;
 	}
+    .extra-info{
+            display: flex;
+            flex-direction: row;
+         justify-content: space-between;
+         align-items: stretch;
+         padding: 2em 5em;
+        }
 
 	@media (min-width: 70rem) {
 		header {
