@@ -27,7 +27,7 @@
 		font-family: "stasmic";
 		src: url("/assets/Fonts/stasmic_.ttf");
 	}
-
+ 
 	h1 {
 		color: white;
 		font-size: 1.5em;

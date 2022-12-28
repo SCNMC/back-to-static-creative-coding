@@ -22,7 +22,7 @@
 		gsap.to(".background", 2.4, {
 			y: "-100%",
 			ease: "Expo.easeInOut",
-			delay: 1,
+			delay: 0,
 		});
 
 		gsap.to("img", 4, {
@@ -34,8 +34,9 @@
 		gsap.to("img", 2.4, {
 			width: "500",
 			height: "700",
+            padding: "none",
 			ease: "Expo.easeInOut",
-			delay: 3.4,
+			delay: 3.2,
 		});
 
 		gsap.from("img", 0.4, {
@@ -74,7 +75,7 @@
 	<section>
 		<div class="background" />
 		<img src="/assets/img1.jpg" alt="image" />
-        <h2>creative </h2>
+        <h2>Shauri Maigua </h2>
 	</section>
 	<section class="extra-info">
 		<p>much creative</p>
@@ -122,9 +123,7 @@
 		background: #bebeb8;
 		height: 100vh;
 	}
-	* {
-		color: #000;
-	}
+
 	p {
 		font-size: 1em;
 		font-family: "Monument Extended";
@@ -193,7 +192,7 @@
 		h2 {
 			position: absolute;
 			background: none;
-			font-size: 17em;
+			font-size: 10em;
 			font-family: "NewYork";
 			font-weight: 200;
 			color: #2584ec;

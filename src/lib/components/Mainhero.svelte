@@ -23,11 +23,11 @@
 	});
 
 	onMount(() => {
-		gsap.to(".poop", {
+		gsap.to(".images", {
 			xPercent: 150,
 			ease: "none",
 			scrollTrigger: {
-				trigger: ".poop",
+				trigger: ".images",
 				start: "top",
 				end: "bottom top",
 				scrub: true,
@@ -51,7 +51,7 @@
 <section class="mainhero">
 	<!-- <img src="/assets/hero-image.jpeg" alt="woman with laptop" /> -->
 	<h2 class="hero-title">Communication<br /> and Multimedia<br /> Design</h2>
-	<img class="poop" src="/assets/hero-image.jpeg" alt="woman with laptop" />
+	<img class="images" src="/assets/hero-image.jpeg" alt="woman with laptop" />
 	<div class="midterm">
 	<p>Midterm</p>
 	<p >Currulicum 2022-2024</p>
@@ -64,7 +64,7 @@
 		flex-direction: column;
 		align-items: flex-start;
 		gap: 1.5em;
-		border-bottom: 4px solid #000;
+		/* border-bottom: 4px solid #000; */
 		padding-bottom: 2em;
 		margin: 0.4em 2.5em;
 	}
@@ -108,6 +108,7 @@
 			/* border-bottom: 4px solid #000; */
 			padding-bottom: 4.5em;
 			margin: 0.4em 4em;
+			overflow-y: hidden;
 		}
 
 		section :nth-child(3) {
@@ -128,7 +129,7 @@
 			align-items: end;
 			justify-content: space-evenly;
 			position: absolute;
-			margin: 13em 21em;
+			margin: 13em 20em;
 			width: 52%;
 			height: 24em;
 		}
