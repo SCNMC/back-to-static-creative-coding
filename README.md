@@ -1,38 +1,15 @@
-# create-svelte
+# Creative Coding week 1
+<img width="1680" alt="Schermafbeelding 2023-01-16 om 15 13 06" src="https://user-images.githubusercontent.com/90189750/212698144-869cff23-8069-4985-a281-f6548a42bdc1.png">
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+**Info**: Dit is een scrolltrigger animatie waar de elementen van elkaar afgaan met de functie scroltrigger.
 
-## Creating a project
 
-If you're seeing this, you've probably already done this step. Congrats!
+# Creative coding week 2
+<img width="1680" alt="Schermafbeelding 2023-01-16 om 15 15 23" src="https://user-images.githubusercontent.com/90189750/212698659-e5270961-bcba-4bf0-921d-1f2ae468cad1.png">
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+**Info**: Dit is een concept gekozen door de fdnd concept roulette. Het concept was crazy acid menu en op basis van dit concept heb ik een menu gemaakt met een transition.
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+# Creative coding week 3
+<img width="1680" alt="Schermafbeelding 2023-01-16 om 15 17 52" src="https://user-images.githubusercontent.com/90189750/212699213-0b017e38-c07b-4d88-acbd-87a50c688b65.png">
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+**info**: Dit is een page animatie gemaakt met Gsap waar de titel als eerst getoond word. Daarna word de afbeelding ingeladen doormiddel van een transition met de rest van de pagina.
